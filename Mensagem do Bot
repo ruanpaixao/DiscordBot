@@ -1,0 +1,26 @@
+# DiscordBot
+DiscordBOOT
+
+ //Esse é o inicio de um bot de mensagem no discord//
+ 
+ const Discord = require('discord.js');
+
+const bot = new Discord.Client();
+
+const token = '';
+
+bot.login(token)
+
+bot.on('ready', () => {
+    console.log('estou pronto')
+})
+
+bot.on('message', msg => {
+    if(msg.content === 'E ai pessoal!'){
+        msg.reply('Olá! tudo bem?')
+    }
+})        
+
+//Lembre sempre de pegar o token do seu bot na pagina developer do discord//
+
+// https://discordapp.com/developers/applications/ //
